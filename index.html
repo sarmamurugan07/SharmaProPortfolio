@@ -1,108 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>3D Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sarma - Software Engineer Resume</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
 
-    <canvas id="bg"></canvas>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <!-- <li><a href="./about.html">About</a></li> -->
+                                <!-- <li><a href="./portfolio.html">Portfolio</a></li> -->
+                                <!-- <li><a href="./services.html">Services</a></li> -->
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./portfolio.html">Portfolio</a></li>
+                                        <li><a href="./blog.html">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://www.linkedin.com/in/sarma-m-2a092b1b0/"><i class="fa fa-linkedin"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://dribbble.com/sarma_07"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-    <main>
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>IM Sarma</span>
+                                <h2>Web Developer 
+                                    <a href="Sharma_Engineering_Resume_RenderCV.pdf" class="primary-btn" download="Sharma_Engineering_Resume_RenderCV.pdf">CV Resume Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>IM Sarma</span>
+                                <h2>UI UX Web Developer</h2>
+                                <a href="Sharma_Engineering_Resume_RenderCV.pdf" class="primary-btn" download="Sharma_Engineering_Resume_RenderCV.pdf">CV Resume Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>IM Sarma</span>
+                                <h2>Graphic Designer</h2>
+                                <a href="Sharma_Engineering_Resume_RenderCV.pdf" class="primary-btn" download="Sharma_Engineering_Resume_RenderCV.pdf">CV Resume Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
 
-        <header>
-            <h1>Sarma M</h1>
-            <p>🚀 Welcome to my website!</p>
-        </header>
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p>If you hire a professional from our team, you will get a skilled software developer, UI/UX designer, and content creator to craft a custom solution tailored to your business. Once the project is completed, you'll receive a high-quality product that meets your needs..</p>
+                        <a href="#" class="primary-btn">View all services</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>Web Developer</h4>
+                                <p>Hi, I'm sarma, a Front-End Developer skilled in Vue.js, JavaScript, jQuery, and modern web technologies. I build responsive, user-friendly websites and applications with clean, maintainable code. My projects include a personal portfolio, a task manager app, and an e-commerce site, showcasing my expertise in state management, routing, and API integrations. Feel free to reach out if you're interested in collaborating or have a project in mind</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>UI UX Developer</h4>
+                                <p>I am a UI/UX Developer with experience in creating user-friendly interfaces and designing content-related illustrations. I'm proficient in Figma, where I design wireframes, prototypes, and high-fidelity mockups. My focus is on creating clear, visually appealing designs that improve user experience..</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>Graph Designer</h4>
+                                <p>I am a Graphic Designer with experience in graph design and 2D animation using Rive. I specialize in creating visually engaging graphics and animations that effectively communicate ideas. My skills include designing dynamic, interactive animations, as well as applying animation principles to bring designs to life. I also have a strong understanding of motion design, storyboarding, and visual storytelling, which helps me create seamless and impactful animations for various platforms.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Back End Developer</h4>
+                                <p>A Back-End Developer with a strong interest in API-related work using C#. Experienced in designing and developing API endpoints and integrating them into scalable back-end systems. Also worked for 2 months with Go (Golang), gaining hands-on experience in building efficient and high-performance back-end services. Passionate about creating robust and secure APIs, optimizing performance, and continuously improving skills with different programming languages and technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
 
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-2.webp">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>JavaScript</h4>
+                    <ul>
+                        <li>skilled 80%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-1.png">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/team/team-2.avif">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>UI UX & graphics Design</h4>
+                    <ul>
+                        <li>skilled 70%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/team/team-4.png">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        ></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/team/team-3.png">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                       ></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.webp">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><i
+                        ></i></a>
+                <div class="work__item__hover">
+                    <h4>Type Script</h4>
+                    <ul>
+                        <li>skilled 70%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
 
-        <blockquote>
-            <p>I like making stuff and putting it on the internet</p>
-        </blockquote>
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-1.png" alt="">
+                                <h2 class="counter_num">90</h2>
+                                <p>Compled Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-2.png" alt="">
+                                <h2 class="counter_num">100</h2>
+                                <p>Web Developer Interest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-3.png" alt="">
+                                <h2 class="counter_num">69</h2>
+                                <p>UI UX Developer Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-4.png" alt="">
+                                <h2 class="counter_num">80</h2>
+                                <p>Graph Design Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
 
-        <section>
-            <h2>📜 About Me</h2>
-            <p>
-                I am a software engineer with 2 years of experience in developing and optimizing software solutions. My expertise includes creating efficient code, implementing robust features, and improving system performance. I have a strong foundation in various programming languages and development tools, and I am skilled at problem-solving and collaborating with teams to deliver high-quality software
-            </p>
-        </section>
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <!-- <span>Nice to meet</span> -->
+                        <h2>MORE EXPERIENCE</h2> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/team-1.png">
+                        <div class="team__item__text">
+                            <h4>VueJs</h4>
+                            <p>Front End Developer</p>
+                            <!-- <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.avif">
+                        <div class="team__item__text">
+                            <h4>FIGMA</h4>
+                            <p>UI UX Developer</p>
+                            <!-- <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.png">
+                        <div class="team__item__text">
+                            <h4>Postgres Sql</h4>
+                            <p>DataBase</p>
+                            <!-- <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.png">
+                        <div class="team__item__text">
+                            <h4>C Sharp</h4>
+                            <p>Back End Developer </p>
+                            <!-- <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">Meet Our Team</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
 
-        <section class="light">
-            <h2>👩🏽‍🚀 Projects</h2>
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>My Jenny</span>
+                        <h2>improve my skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Building the Future, One Line of Code at a Time?</h4>
+                            <!-- <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul> -->
+                            <p>Every line of code I write is a step toward the future. As a Full-Stack Developer, I focus on building powerful applications that solve today’s problems while being ready for tomorrow. With skills in Vue.js, Flutter, and C#, I’m always looking for ways to improve and innovate. Whether I’m creating smooth user interfaces or designing mobile apps to boost productivity, I aim to make technology more intuitive and efficient. In a fast-changing digital world, I’m committed to building the future—one line of code at a tim</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Crafting Seamless Digital Experiences with Code and Design</h4>
+                            <!-- <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul> -->
+                            <p>
+                                In today’s digital world, user experience is key. As a developer, I specialize in creating seamless web and mobile applications that blend code and design. With expertise in Vue.js, Flutter, and C#, I build high-performance solutions that are both functional and easy to use. What sets me apart is my passion for UI/UX design, creating clean and intuitive interfaces that make every interaction feel effortless. My goal is to prioritize the user experience, ensuring ease of use and lasting satisfaction.</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>From Code to Creation: My Journey as a Full-Stack Developer?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>
+                                My journey from a beginner to a skilled Full-Stack Developer has been an exciting mix of learning, creativity, and problem-solving. I started with the basics of front-end and back-end development, and soon began building complete applications using Vue.js, C#, and Flutter. Along the way, I developed a passion for UI/UX design, focusing on creating clean, user-friendly interfaces with powerful features. Each project allows me to turn ideas into fully functioning digital experiences</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bringing Ideas to Life Through Web and Mobile Development</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>Turning ideas into reality is what I do best. As a Full-Stack Developer, I specialize in transforming concepts into functional products. Whether building web apps with Vue.js or mobile solutions with Flutter, my goal is always to bring great ideas to life. I work closely with clients to understand their vision, combining design skills and technical expertise to create solutions that meet their needs. Through collaboration and creativity, I ensure the final product is both functional and beautifully designed.</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Passionate Developer, Dedicated to Crafting User-Centered Solutions?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>My journey from a beginner to a skilled Full-Stack Developer has been an exciting mix of learning, creativity, and problem-solving. I started with the basics of front-end and back-end development, and soon began building complete applications using Vue.js, C#, and Flutter. Along the way, I developed a passion for UI/UX design, focusing on creating clean, user-friendly interfaces with powerful features. Each project allows me to turn ideas into fully functioning digital experiences</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
 
-            <p>
-                I have all my projects on <a style="text-decoration: none; color: #d4242d;"
-                    href="https://github.com/AnirudhPanda" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    I have all my projects on GitHub. I mostly work on web development and also have a working large-scale social networking application of my own, which is private.           </p>
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+                        <!-- <p>INC5000, Best places to work 2019</p>
+                        <a href="#">Start your stories</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
 
-            <h2>🏆 Skills</h2>
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://www.linkedin.com/in/sarma-m-2a092b1b0/"><i class="fa fa-linkedin"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://dribbble.com/sarma_07"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About us</h5>
+                            <p>
+                                Hi, I'm Sarma M, a Full-Stack Web Developer with over 2.6 years of experience. I specialize in Vue.js, C#, and Flutter, creating web and mobile applications that are both user-friendly and efficient. I also have a passion for UI/UX design, and I enjoy creating clean, intuitive interfaces using tools like Figma.
+                                Currently, I work at Tinisoft, where I help develop and maintain the TSOffice application, a web platform that helps organizations manage employees, projects, and assets. I focus on building high-quality, reliable software that solves real-world problems.                               
+                                I’m also dedicated to ensuring the quality of my work, and I incorporate manual testing throughout the development process to make sure everything runs smoothly.
+                                
+                                .</p>
+                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Who we are</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Our work</h5>
+                            <ul>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Browse Archive</a></li>
+                                <li><a href="#">Video for web</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>software is an award-winning, full-service production company specializing.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">sarma</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
-            <ul>
-                <li><strong>Web Technology:</strong> HTML, CSS, Element Plus ,JavaScript, TypeScript, Bootstrap, PrimeVue ,Vue.js, Sql,
-              
-                   CI, Git/GitHub</li>
-                <li><strong>Hosting:</strong> GitHub Pages</li>
-            </ul>
-
-            <h2>💥 RESUME</h2>
-            <a style="text-decoration: none; color: #d4242d; display: flex; justify-content: center;"
-                href="https://drive.google.com/file/d/1i2cxz7uqVDzcDykR4jvCTZVWYQrcQmlW/view?usp=sharing" target="_blank"
-                rel="noopener noreferrer">Resume as of Aug 2024</a>
-
-        </section>
-
-        <blockquote>
-            <p>You are what you believe in. You become that which you believe you can become <br>― sarma</p>
-        </blockquote>
-
-        <section class="left">
-            <h2>🌮 Work History</h2>
-
-            <h3>Junior Software Engineer</h3>
-            <p>
-                Led the development of TSOffice, a large-scale web application serving multiple organizations with
-                comprehensive solutions for employee administration, asset management, project permissions, and more.
-                </p>
-           
-
-            <h3>Prototyping and Wireframing</h3>
-            <p>
-                Use tools like Figma to create high-fidelity prototypes and wireframes. These can help visualize the design and layout before diving into development.
-            </p>
-
-            <h3>User Research and Testing</h3>
-            <p>
-                Conduct user research to understand your audience's needs and preferences. Implement usability testing to gather feedback on your designs and make iterative improvements.
-            </p>
-            <h3>Accessibility</h3>
-            <p>Ensure your application is accessible to users with disabilities. Follow guidelines such as the Web Content Accessibility Guidelines (WCAG) to make your designs inclusive.</p>
-            <h3>Performance Optimization</h3>
-            <p>Design with performance in mind. Optimize images, leverage lazy loading, and consider the impact of your design choices on load times and responsiveness.</p>
-            <h3>Collaboration and Communication</h3>
-            <p>Use collaboration tools like Slack, or Jira to coordinate with your team. Clear communication and documentation can help align your design with development and other stakeholders.</p>
-            <h3>Version Control</h3>
-            <p>If you're not already, consider using version control systems like Git to manage changes in your design files and coordinate with the development team</p>
-            <h3>Responsive and Adaptive Design</h3>
-            <p>Ensure that your designs work well on various devices and screen sizes. Test your designs on different devices and orientations to guarantee a seamless experience</p>
-        </section>
-
-        <blockquote>
-            <p>Thanks for visiting!</p>
-            <br>
-            <a style="color: #d4242d; text-decoration: none;" href="http://anirudhpanda.me/" target="_blank"
-                rel="noopener noreferrer"> - Sarma</a>
-        </blockquote>
-
-
-    </main>
-
-    <script type="module" src="./index.js"></script>
-
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
