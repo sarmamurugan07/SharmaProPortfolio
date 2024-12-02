@@ -31,10 +31,10 @@ html, body {
   height: 100%; /* Make sure the body and HTML elements take up the full height of the viewport */
   font-family: "Josefin Sans", sans-serif; /* Set the font to "Josefin Sans" (with a fallback to sans-serif if the font is not available) */
   -webkit-font-smoothing: antialiased; /* Improve font rendering on WebKit-based browsers (like Chrome and Safari) */
-  cursor: url('/img/cursor.png'), auto;
+  cursor: url('/img/cursor-img.png'), auto;
 }
 .owl-dot{
-  cursor: url('/img/cursor-point.png'), auto;
+  cursor: url('/img/cursor-img.png'), auto;
 }
 
 h1,
@@ -1212,7 +1212,7 @@ ol {
   text-align: center;
   margin-bottom: 40px;
 }a{
-  cursor: url('/img/cursor-point.png'), auto;
+  cursor: url('/img/cursor-point-img.png'), auto;
 
 }
 .portfolio__filter li {
