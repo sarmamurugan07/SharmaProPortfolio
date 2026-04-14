@@ -2231,12 +2231,12 @@ body.show-chatbot .chatbot-popup{
   gap:10px
 }
 .header-info .chatbot-logo{
-  height: 35px;
-  width:35px;
+  height: 45px;
+  width:45px;
   padding: 6px;
   fill:#5350C4;
   flex-shrink: 0;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 50%;
 }
 .header-info .logo-text{
@@ -2309,16 +2309,16 @@ body.show-chatbot .chatbot-popup{
   bottom: 30px;
   right: 35px;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
   border-radius: 50%;
-  background: #5350C4;
+  background: #ffffff00;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #5350C4;
+  /* background-color: #5350C4; */
   transition: all 0.2 ease;
 }
 #chatbot-toggler span{
@@ -2441,6 +2441,63 @@ animation: dotpulse 1.8s ease-in-out infinite;
   }
   
 }
+.chat-footer {
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px 15px 15px;
+}
+
+.chat-footer .chat-form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 32px;
+  outline: 1px solid #CCCCE5;
+  padding-right: 8px; /* Space for the button */
+}
+
+.chat-footer .chat-form:focus-within {
+  outline: 2px solid #5350C4;
+}
+
+.chat-form .message-input {
+  border: 0;
+  outline: none;
+  height: 47px;
+  width: 100%;
+  resize: none;
+  font-size: 0.95rem;
+  padding: 14px 18px;
+  border-radius: inherit;
+  background: transparent;
+}
+
+.chat-form .chat-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* FIX: Ensure the button is always visible and flex-centered */
+.chat-form .chat-controls #send-message {
+  height: 35px;
+  width: 35px;
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+  background-color: #5350C4;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.chat-form .chat-controls #send-message:hover {
+  background-color: #3d39ac;
+}
 
 .chat-footer{
   position: absolute; 
@@ -2491,15 +2548,35 @@ animation: dotpulse 1.8s ease-in-out infinite;
   border-radius: 50%;
   transition: 0.2s ease;
 }
-.chat-form .chat-controls #send-message{
+/* .chat-form .chat-controls #send-message{
   color: #fff;
   background-color: #5350C4;
   display: none;
-}
-.chat-form .message-input:valid~.chat-controls #send-message{
+} */
+/* .chat-form .message-input:valid~.chat-controls #send-message{
   display: block;
+} */
+
+/* 1. Remove 'display: none' from here */
+.chat-form .chat-controls #send-message {
+  color: #fff;
+  background-color: #5350C4;
+  display: flex; /* Changed from none to flex */
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
 }
 
+/* 2. Remove or comment out this rule as it won't work with your current HTML nesting */
+/* .chat-form .message-input:valid~.chat-controls #send-message {
+  display: block;
+} */
+
+/* 3. Fix the hover effect (your selector had an extra 'button' tag in it) */
+.chat-form .chat-controls #send-message:hover {
+  background-color: #3d39ac;
+  color: #fff;
+}
 
 
 .chat-form .chat-controls button:hover{
@@ -2507,10 +2584,10 @@ animation: dotpulse 1.8s ease-in-out infinite;
 }
 
 
-.chat-form .chat-controls button #send-message:hover{
+/* .chat-form .chat-controls button #send-message:hover{
   color: #fff;
   background-color: #3d39ac;
-}
+} */
 
 .chat-form .file-upload-wrapper{
   height: 35px;
